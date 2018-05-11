@@ -1,6 +1,6 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-	xmlns:hr="http://tutorialspoint.com/hr/schemas" elementFormDefault="qualified"
-	targetNamespace="http://tutorialspoint.com/hr/schemas">
+	xmlns:hr="http://obus.com/hr/schemas" elementFormDefault="qualified"
+	targetNamespace="http://obus.com/hr/schemas">
 
 	<xs:element name="LeaveRequest">
 		<xs:complexType>

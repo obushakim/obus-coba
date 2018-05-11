@@ -29,4 +29,12 @@
 		<sws:xsd location="/WEB-INF/countries.xsd" />
 	</sws:dynamic-wsdl>
 	
+	<sws:dynamic-wsdl id="employee"
+		portTypeName="EmployeePort"
+		locationUri="/employeeService/" 
+		targetNamespace="http://obus.com/hr/definitions">
+		
+		<sws:xsd location="/WEB-INF/employee.xsd" />
+	</sws:dynamic-wsdl>
+	
 </beans>

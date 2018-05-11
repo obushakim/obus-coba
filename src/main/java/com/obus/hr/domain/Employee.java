@@ -1,9 +1,25 @@
 package com.obus.hr.domain;
 
-public class Employee {
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="EMPLOYEE")
+public class Employee{
+
+	@Id
+	@Column(name="id", unique=true, nullable=false)
 	private int id;
+	
+	@Column(name="first_name", unique=true, nullable=false)
 	private String firstName;
+	
+	@Column(name="last_name", unique=true, nullable=false)
 	private String lastName;
+	
+	@Column(name="salary", unique=true, nullable=false)
 	private int salary;
 	
 	public Employee(){}
@@ -12,24 +28,28 @@ public class Employee {
 		this.lastName = lname;
 		this.salary = salary;
 	}
+	
 	public int getId() {
 		return id;
 	}
 	public void setId(int id) {
 		this.id = id;
 	}
+	
 	public String getFirstName() {
 		return firstName;
 	}
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
 	}
+	
 	public String getLastName() {
 		return lastName;
 	}
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
+	
 	public int getSalary() {
 		return salary;
 	}
